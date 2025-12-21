@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Bulk Cancel",
+  "version": "25.3.0",
+  "description": "Bulk-cancel Amazon Subscribe & Save items with a draggable UI, progress bar, and parallel workers.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "512": "icons/icon-512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.co.uk/auto-deliveries*",
+        "https://www.amazon.com/auto-deliveries*",
+        "https://www.amazon.de/auto-deliveries*",
+        "https://www.amazon.co.uk/gp/subscribe-and-save/manager/viewsubscriptions*",
+        "https://www.amazon.com/gp/subscribe-and-save/manager/viewsubscriptions*",
+        "https://www.amazon.de/gp/subscribe-and-save/manager/viewsubscriptions*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "109.0"
+    }
+  },
+  "homepage_url": "https://github.com/<YOUR_GITHUB_USERNAME>/amazon-bulk-cancel"
+}
