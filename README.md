@@ -1,7 +1,8 @@
 # Amazon Bulk Cancel (Subscribe & Save)
 
 A Firefox (Manifest V3) extension that adds a small draggable panel to Amazon Subscribe & Save pages, letting you **bulk-cancel** selected subscriptions with a progress bar and parallel “worker” tabs (hidden iframes).
-![Demo](demo.gif)
+
+![Demo](./demo.gif)
 
 ## What it does
 - Injects a UI panel on supported pages
