@@ -23,6 +23,8 @@ A Firefox (Manifest V3) extension that adds a small draggable panel to Amazon Su
 2. Click **Load Temporary Add-on...**
 3. Select `manifest.json` from this folder
 
+   Or install from Firefox Extension store hre https://addons.mozilla.org/en-GB/firefox/addon/amazon-bulk-cancel/
+
 ## Usage
 1. Open your Amazon Subscribe & Save management page
 2. Click **Load All Items** (optional, to expand pagination)
