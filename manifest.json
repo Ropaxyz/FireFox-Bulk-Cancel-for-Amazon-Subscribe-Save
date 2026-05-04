@@ -1,12 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Amazon Bulk Cancel",
-  "version": "25.3.0",
-  "description": "Bulk-cancel Amazon Subscribe & Save items with a draggable UI, progress bar, and parallel workers.",
+  "name": "Amazon Bulk Cancel for Subscribe & Save",
+  "version": "25.5.0",
+  "description": "Cancel Amazon Subscribe & Save subscriptions in bulk. Draggable panel with live progress, adjustable parallel cancellations, retries, and a stop button. UK / US / DE.",
   "icons": {
     "48": "icons/icon-48.png",
     "96": "icons/icon-96.png",
     "512": "icons/icon-512.png"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "Amazon Bulk Cancel"
   },
   "content_scripts": [
     {
@@ -27,8 +34,12 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "strict_min_version": "109.0"
+      "id": "{a1b2c3d4-e5f6-4789-a012-345678901234}",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
-  "homepage_url": "https://github.com/<YOUR_GITHUB_USERNAME>/amazon-bulk-cancel"
+  "homepage_url": "https://github.com/Ropaxyz/Bulk-Cancel-for-Amazon-Subscribe-Save"
 }
