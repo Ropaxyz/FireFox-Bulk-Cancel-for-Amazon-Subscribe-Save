@@ -15,15 +15,20 @@
 
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
 
 const root = path.join(__dirname, '..');
 const src = fs.readFileSync(path.join(root, 'content-script.js'), 'utf8');
 let failed = false;
 
 // 1. Parse the way a browser parses a classic <script>.
+//    vm.Script compiles the source as a classic script, exactly like
+//    new Function(src) did, but without evaluating a string as code -
+//    which is what AMO's validator warns about. It is also stricter
+//    (e.g. it rejects a top-level `return`), so it matches a content
+//    script more closely than a function body does.
 try {
-  // eslint-disable-next-line no-new-func
-  new Function(src);
+  new vm.Script(src, { filename: 'content-script.js' });
   console.log('OK  parses as a classic script');
 } catch (e) {
   failed = true;
