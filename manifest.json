@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Amazon Bulk Cancel for Subscribe & Save",
-  "version": "25.5.0",
+  "version": "25.7.0",
   "description": "Cancel Amazon Subscribe & Save subscriptions in bulk. Draggable panel with live progress, adjustable parallel cancellations, retries, and a stop button. UK / US / DE.",
   "icons": {
     "48": "icons/icon-48.png",
@@ -41,5 +41,5 @@
       }
     }
   },
-  "homepage_url": "https://github.com/Ropaxyz/Bulk-Cancel-for-Amazon-Subscribe-Save"
+  "homepage_url": "https://github.com/Ropaxyz/FireFox-Bulk-Cancel-for-Amazon-Subscribe-Save"
 }

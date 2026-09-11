@@ -1,0 +1,20 @@
+# Saved Amazon pages and their assets, kept locally for debugging page-layout
+# changes. Useful while working on the scrapers, never shipped.
+amazon latest/
+amazonlatest/
+page-captures/
+*.htm
+Manage Your Deliveries_files/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local build output
+*.xpi
+*.zip
